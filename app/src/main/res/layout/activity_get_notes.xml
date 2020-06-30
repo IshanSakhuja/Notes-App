@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".getNotes">
+
+    <EditText
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:ems="10"
+        android:hint="Title"
+        android:background="@android:color/transparent"
+        android:textSize="30sp"
+        android:layout_margin="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/tvDes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill_vertical"
+        android:ems="10"
+        android:layout_margin="20dp"
+        android:gravity="start|top"
+        android:hint="Description"
+        android:background="@android:color/transparent"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textSize="18sp" />
+</LinearLayout>
