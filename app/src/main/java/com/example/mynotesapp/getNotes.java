@@ -13,8 +13,8 @@ import static com.example.mynotesapp.MainActivity.sharedPreferences;
 import static com.example.mynotesapp.MainActivity.titles;
 
 public class getNotes extends AppCompatActivity {
-    TextView textViewtitle;
-    TextView textViewDes;
+    EditText textViewtitle;
+    EditText textViewDes;
     Intent intent;
     String title;
     String description;
@@ -25,8 +25,8 @@ public class getNotes extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_get_notes);
-        textViewtitle = (TextView) findViewById(R.id.tvTitle);
-        textViewDes = (TextView) findViewById(R.id.tvDes);
+        textViewtitle = (EditText) findViewById(R.id.tvTitle);
+        textViewDes = (EditText) findViewById(R.id.tvDes);
         textViewtitle.setPaintFlags(textViewtitle.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
         intent = getIntent();
         title = intent.getStringExtra("title");
